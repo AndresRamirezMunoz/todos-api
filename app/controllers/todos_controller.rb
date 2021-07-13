@@ -6,6 +6,7 @@ class TodosController < ApplicationController
   def index
     @todos = Todo.all
     json_response(@todos)
+    #render json: @todos, status: 200
   end
 
   # POST /todos
